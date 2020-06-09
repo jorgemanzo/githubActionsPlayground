@@ -4,8 +4,18 @@ printf "########################\n"
 printf "#  Cleaning up ....    #\n"
 printf "########################\n"
 
-rm ../new_gcc_dockerfile/*.sh
-rm ../new_gcc_dockerfile/*.cpp
-rm ../old_gcc_dockerfile/*.sh
-rm ../old_gcc_dockerfile/*.cpp
+if [ -f ../new_gcc_dockerfile/*.sh ]; then
+  rm ../new_gcc_dockerfile/*.sh
+fi
 
+if [ -f ../new_gcc_dockerfile/*.cpp ]; then
+  rm ../new_gcc_dockerfile/*.cpp
+fi
+
+if [ -f ../old_gcc_dockerfile/*.sh ]; then
+  rm ../old_gcc_dockerfile/*.sh
+fi
+
+if [ -f ../old_gcc_dockerfile/*.cpp ]; then
+  rm ../old_gcc_dockerfile/*.cpp
+fi

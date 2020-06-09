@@ -6,7 +6,7 @@ printf "########################\n"
 
 
 cp entryPoint.sh ../new_gcc_dockerfile/
-./copy_source.sh ../new_gcc_dockerfile/
+./copy_src.sh ../new_gcc_dockerfile/
 
 printf "########################\n"
 printf "#  setup_new_gcc done  #\n"
