@@ -2,5 +2,5 @@ name: 'Build with GCC 4'
 description: 'Compile with gcc 4.8'
 runs:
   using: 'docker'
-  image: '../Dockerfile.older'
+  image: '../../new/Dockerfile'
 
