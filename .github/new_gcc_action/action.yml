@@ -1,0 +1,8 @@
+name: 'Build with GCC 7'
+description: 'Compile with gcc 7.5'
+runs:
+  pre-entrypoint: '../../scripts/setup_new_gcc.sh'
+  using: 'docker'
+  image: '../../new_gcc_dockerfile/Dockerfile'
+  post_entrypoint: '../../scripts/cleanup.sh'
+
