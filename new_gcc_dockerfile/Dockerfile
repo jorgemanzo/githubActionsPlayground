@@ -5,7 +5,7 @@ COPY compileMe.cpp /compileMe.cpp
 
 COPY entryPoint.sh /entryPoint.sh
 
-RUN chmod 755 entryPoint.sh
+RUN ./entryPoint.sh
 
 ENTRYPOINT ["entryPoint.sh"]
 
