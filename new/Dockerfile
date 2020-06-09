@@ -1,7 +1,7 @@
 # This is the version of GCC I have on my computer
 FROM gcc:7.5
 
-WORKDIR ../../
+WORKDIR ../
 
 COPY compileMe.cpp /
 
