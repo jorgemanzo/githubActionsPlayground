@@ -16,7 +16,7 @@ Turns out, `gcc 7.5` automatically includes (or provides) `cstdlib` and `stdio` 
 
 On the other hand, `gcc 4.8` does **NOT** do this!!. Would have been great to catch this ahead of time. CI to the rescue!
 
-Why not use TravisCI? Why use TravisCI when I can do this myself with GitHub actions and some shell files :). Wheres the fun in TravisCI?
+Why not use TravisCI? Why use TravisCI when I can do this myself with GitHub actions and some shell files :). Where's the fun in TravisCI?
 
 
 How this is relevant to System Administration
