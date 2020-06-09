@@ -1,8 +1,9 @@
 #include <iostream>
+#include <cstdio>
 
 char* intToStr(int n)
 {
-    char a[20];
+    char* a = (char*) malloc(sizeof(char)*20);
     sprintf(a, "%d", n);
     return a;
 }
