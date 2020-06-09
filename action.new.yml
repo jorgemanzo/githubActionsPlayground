@@ -1,0 +1,6 @@
+name: 'Build with GCC 7'
+description: 'Compile with gcc 7.5'
+runs:
+  using: 'docker'
+  image: 'Dockerfile.newer'
+

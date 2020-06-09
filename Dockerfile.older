@@ -1,0 +1,8 @@
+# This was on flip...
+FROM gcc:4.8.5 AS older
+
+COPY compileMe.cpp /compileMe.cpp
+
+COPY entryPoint.sh /entryPoint.sh
+
+ENTRYPOINT ["entryPoint.sh"]
