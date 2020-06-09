@@ -5,4 +5,4 @@ COPY compileMe.cpp /compileMe.cpp
 
 COPY entryPoint.sh /entryPoint.sh
 
-ENTRYPOINT ["entryPoint.sh"]
+RUN ./entryPoint.sh
