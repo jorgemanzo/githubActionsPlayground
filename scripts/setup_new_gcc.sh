@@ -5,8 +5,14 @@ printf "#  setup_new_gcc.sh    #\n"
 printf "########################\n"
 
 
-cp entryPoint.sh ../new_gcc_dockerfile/
-./copy_src.sh ../new_gcc_dockerfile/
+cp ./scripts/entryPoint.sh ../new_gcc_dockerfile/
+if [[ $? -ne 0 ]]; then
+  exit 1
+fi
+./scripts/copy_src.sh ../new_gcc_dockerfile/
+if [[ $? -ne 0 ]]; then
+  exit 1
+fi
 
 printf "########################\n"
 printf "#  setup_new_gcc done  #\n"
