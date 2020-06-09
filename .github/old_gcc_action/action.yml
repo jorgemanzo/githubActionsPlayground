@@ -1,8 +1,6 @@
 name: 'Build with GCC 4'
 description: 'Compile with gcc 4.8'
 runs:
-  pre-entrypoint: '../../scripts/setup_old_gcc.sh'
   using: 'docker'
   image: '../../old_gcc_dockerfile/Dockerfile'
-  post-entrypoint: '../../scripts/cleanup.sh'
 
