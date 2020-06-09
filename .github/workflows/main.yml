@@ -8,10 +8,10 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2.2.0
         - name: Compile 7.5
-          uses: ./.github/action_new.yml
+          uses: ./.github/newgcc/action
     build_old:
         name: Compile a build using gcc 4.8
         runs-on: ubuntu-latest
         steps:
         - name: Compile 4.8
-          uses: ./.github/action_new.yml
+          uses: ./.github/oldgcc/action
